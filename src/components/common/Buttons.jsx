@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export function Button({ label, onClick, variant="primary", to}) {
+export function Button({ onClick, className="primary", to, children}) {
     const styles = {
         primary: 'btn-primary',
         secondary: 'btn-secondary'
@@ -8,15 +8,15 @@ export function Button({ label, onClick, variant="primary", to}) {
 
     if (to) {
         return (
-            <Link to={to} className={styles[variant]}>
-                {label}
+            <Link to={to} className={styles[className]}>
+                {children}
             </Link>
         )
     }
 
     return (
-        <button className={styles[variant]} onClick={onClick}>
-            {label}
+        <button className={styles[className]} onClick={onClick}>
+            {children}
         </button>
     );
 }
