@@ -5,7 +5,6 @@ export default function Textinput({
     name,
     label,
     placeholder,
-    minLength,
     value,
     onChange,
     error,
@@ -14,18 +13,19 @@ export default function Textinput({
 }) {
 
     return(
-        <>
+        <div>
+            <label htmlFor={name}>{label}</label>
             <input 
             type={type} 
             name={name} 
-            label={label} 
+            className={`input-base ${error ? 'input-error' : ''}`}
             placeholder={placeholder} 
-            minLength={minLength}
             value={value}
             onChange={onChange}
             required={required}
             disabled={disabled} 
             ></input>
-        </>
+            <span className="error-text">{error}</span>
+        </div>
     )
 }
