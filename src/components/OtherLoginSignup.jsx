@@ -7,8 +7,10 @@ export default function OtherLoginSignup () {
         const url = '';
         const type = "popupwindow";
         const size = "width=500,height=400";
-        window.open(url, type, size);
+        const SignupWin = window.open(url, type, size);
+        setTimeout(() => {SignupWin.close()}, 3000);
     }
+
 
     return(
         <div>
