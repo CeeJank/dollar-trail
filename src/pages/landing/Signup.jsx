@@ -3,7 +3,6 @@ import {Button} from '@/components/common/Buttons';
 import OtherLoginSignup from '@/components/OtherLoginSignup';
 import {useState} from  'react';
 
-
 export default function Signup() {
     // states to set errors to input fields
     const [username, setUsername] = useState('');
