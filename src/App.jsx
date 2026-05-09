@@ -11,7 +11,7 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path={Pageroutes.Landing} element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route path={Pageroutes.Login} element={<Login />} />
         <Route path={Pageroutes.Signup} element={<Signup />} />
       </Routes>
