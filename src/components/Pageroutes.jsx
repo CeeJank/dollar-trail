@@ -4,4 +4,6 @@ export const Pageroutes = {
     Landing: "Landing",
     Login: "/Login",
     Signup: "/Signup",
+    Dashboard: "/Dashboard",
+    About: "/About"
 }
