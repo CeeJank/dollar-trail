@@ -3,6 +3,7 @@ import Header from '@/components/common/Header';
 import Landing from '@/pages/landing/Landing';
 import Login from '@/pages/landing/Login';
 import Signup from '@/pages/landing/Signup';
+import Dashboard from '@/pages/home/Dashboard';
 import {Pageroutes} from '@/components/Pageroutes';
 
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path={Pageroutes.Login} element={<Login />} />
         <Route path={Pageroutes.Signup} element={<Signup />} />
+        <Route path={Pageroutes.Dashboard} element={<Dashboard />} />
       </Routes>
 
     </BrowserRouter>

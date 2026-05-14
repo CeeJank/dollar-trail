@@ -7,12 +7,12 @@ import {Pageroutes} from '@/components/Pageroutes';
 export default function Landing() {
     return (
         <div className="flex h-screen">
-            <Navbar />
             <div>
             <h1>Welcome to Dollar Trail!</h1>
             <p>Your best companion to tracking expenses on the go!</p>
             <Button className="primary" to={Pageroutes.Login}>Login</Button>
             <Button className="secondary" to={Pageroutes.Signup}>Sign Up</Button>
+            <Button className="secondary" to={Pageroutes.Dashboard}>Dashboard</Button>
             </div>
 
             <Footer />

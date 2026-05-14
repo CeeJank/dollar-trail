@@ -5,5 +5,6 @@ export const Pageroutes = {
     Login: "/Login",
     Signup: "/Signup",
     Dashboard: "/Dashboard",
-    About: "/About"
+    About: "/About",
+    Logout: "/Landing"
 }
