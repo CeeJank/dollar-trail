@@ -8,13 +8,12 @@ export default function Navbar() {
     const navbarList = ["Dashboard", "About", "more"];
     const navbarBottomList = ["Submit Feedback", "logout"];
 
-    const navbarListItems = navbarList.map(items => <Link to={Pageroutes.items}><li>{items}</li></Link>); //if using {} use return statement to load items
-    const navbarBottomListItems = navbarBottomList.map(items => <Link to={Pageroutes.items}><li>{items}</li></Link>)
-
+    const navbarListItems = navbarList.map(items => <Link to={Pageroutes.items}><li className="hover:bg-sky-500">{items}</li></Link>); //if using {} use return statement to load items
+    const navbarBottomListItems = navbarBottomList.map(items => <Link to={Pageroutes.items}><li className="hover:bg-sky-500">{items}</li></Link>);
 
 
     return(
-        <div className="container flex flex-col w-64 h-screen">
+        <div className="container relative flex flex-col w-80 h-screen bg-gray-300">
             <div>
             <Link to={Pageroutes.Landing}>
                 <Image
@@ -26,16 +25,18 @@ export default function Navbar() {
             </Link>
             </div>
 
-            <div className="bg-gray-50 border-solid border-2 border-black rounded-sm mt-5">    
-            <UnorderedList style={{listStyleType: "none"}}>
-                {navbarListItems}
-            </UnorderedList>
-            </div>
+            <div className="flex flex-col justify-between flex-1">
+                <div className="flex justify-center">    
+                    <UnorderedList style={{listStyleType: "none"}}>
+                        {navbarListItems}
+                    </UnorderedList>
+                </div>
 
-            <div className="fixed bottom-0">
-            <UnorderedList style={{listStyleType: "none"}}>
-                {navbarBottomListItems}
-            </UnorderedList>
+                <div className="flex justify-center text-center">
+                    <UnorderedList style={{listStyleType: "none"}}>
+                        {navbarBottomListItems}
+                    </UnorderedList>
+                </div>
             </div>
             
 
