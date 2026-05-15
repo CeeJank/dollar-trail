@@ -5,6 +5,7 @@ import Login from '@/pages/landing/Login';
 import Signup from '@/pages/landing/Signup';
 import Dashboard from '@/pages/home/Dashboard';
 import {Pageroutes} from '@/components/Pageroutes';
+import Chart from 'chart.js/auto';
 
 
 function App() {
