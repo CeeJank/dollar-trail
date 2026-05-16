@@ -3,6 +3,8 @@ import UnorderedList from "@/components/common/UnorderedList";
 
 
 export default function Footer() {
+
+
     return(
         <footer className="flex justify-center mx-auto w-full">
             <div className="brand-side">
